@@ -1,7 +1,7 @@
 # programmieren_2_aufgabe_1
 
 # Leistungskurve
-
+j
 > Kurze Beschreibung des Projekts – was macht es und warum?
 
 ---
