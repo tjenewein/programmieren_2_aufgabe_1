@@ -23,7 +23,7 @@
 
 Es werden Leistungsdaten analysiert und anschließend wird eine Leistungskurve ausgegeben die zeigt wie lange eine Testperson eine gewisse Leistung beibehalten kann.
 
-![This is the resulting power curve](figures/power_corve.png)
+![This is the resulting power curve](figures/sorted_power.png)
 
 
 ---
