@@ -1,98 +1,129 @@
 # programmieren_2_aufgabe_1
 
-# Leistungskurve
+# Power Curve
 
-> Kurze Beschreibung des Projekts – was macht es und warum?
+> This project reads fictitious sensor data from a CSV file, applies a hand-written bubble sort to organize it, and renders the result as a power curve that illustrates how long a test subject can hold a given power output.
 
 ---
 
-## Inhaltsverzeichnis
+## Table of Contents
 
-- [Über das Projekt]
-- [Voraussetzungen]
+- [About the Project]()
+- [Requirements]
 - [Installation]
-- [Verwendung]
-- [Projektstruktur]
-- [Abhängigkeiten]
-- [Lizenz]
-- [Autor]
+- [Usage]
+- [Project Structure]()
+- [Dependencies]
+- [License]
+- [Authors]
 
 ---
 
-## Über das Projekt
+## About the Project
 
-Es werden Leistungsdaten analysiert und anschließend wird eine Leistungskurve ausgegeben die zeigt wie lange eine Testperson eine gewisse Leistung beibehalten kann.
+Power data is analyzed and a power curve is generated, showing how long a test subject can maintain a certain power output.
 
-![This is the resulting power curve](figures/sorted_power.png)
-
+![Resulting power curve](figures/sorted_power.png)
 
 ---
 
-## Voraussetzungen
+## Requirements
 
 - Python >= 3.13
-- uv 
+- uv
 - Git
+- Internet connection for installing dependencies
 
 ---
 
 ## Installation
 
-```bash
-uv Installation: powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-# Repository klonen
-git clone https://github.com/dein-user/dein-repo.git
-cd dein-repo
+### Install uv
 
-# Abhängigkeiten installieren
-uv install
+**Windows (PowerShell):**
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+**macOS / Linux:**
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+
+---
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/tjenewein/programmieren_2_aufgabe_1.git
+cd programmieren_2_aufgabe_1
 ```
 
 ---
 
-## Verwendung
+### Install Dependencies
+
+Install all required packages:
 
 ```bash
-# Programm starten
-uv run python main.py
+uv sync
 ```
+
+This will:
+- Install all Python dependencies
+- Create a virtual environment automatically
+- Use the exact versions defined in `uv.lock`
 
 ---
 
-## Projektstruktur
+## Usage
 
+```bash
+# Run the main script
+uv run python power_curve.py
 ```
-dein-repo/
-├── figures/          # Gespeicherte Plots
-├── main.py           # Hauptprogramm
-├── load_data.py      # Daten laden
-├── sort.py           # Sortieralgorithmen
-├── pyproject.toml    # PDM Projektkonfiguration
-├── uv.lock          # Lockfile
+
+The generated plot will be saved to the `figures/` folder as a PNG file.
+
+---
+
+## Project Structure
+
+```text
+programmieren_2_aufgabe_1/
+│
+├── figures/                  # Saved plots
+│   └── sorted_power.png
+│
+├── activity.csv              # Input sensor data
+├── main.py                   # Main script
+├── load_data.py              # Data loading
+├── sort.py                   # Bubble sort algorithm
+├── pyproject.toml            # Project configuration
+├── uv.lock                   # Lockfile
 ├── .gitignore
+├── .python-version
 └── README.md
 ```
 
 ---
 
-## Abhängigkeiten
+## Dependencies
 
-| Paket | Version | Zweck |
-|-------|---------|-------|
-| numpy | >= 1.x | Numerische Berechnungen |
-| matplotlib | >= 3.x | Plotting |
-
-Alle Abhängigkeiten sind in `pyproject.toml` definiert.
+All dependencies are defined in `pyproject.toml`.
 
 ---
 
-## Lizenz
+## License
 
 No License
 
 ---
 
-## Autor
+## Authors
 
-**Dein Name**
-- GitHub: [@dein-user](https://github.com/dein-user)
+Anna Kapanke
+Jeremias Koller
+Thomas Jenewein 
+GitHub: https://github.com/tjenewein
