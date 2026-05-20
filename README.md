@@ -8,11 +8,11 @@
 
 ## Table of Contents
 
-- [About the Project]()
+- [About the Project]
 - [Requirements]
 - [Installation]
 - [Usage]
-- [Project Structure]()
+- [Project Structure]
 - [Dependencies]
 - [License]
 - [Authors]
@@ -81,7 +81,7 @@ This will:
 
 ```bash
 # Run the main script
-uv run python power_curve.py
+uv run python main.py
 ```
 
 The generated plot will be saved to the `figures/` folder as a PNG file.
@@ -121,7 +121,7 @@ No License
 
 ---
 
-## Authors
+### Authors
 
 Anna Kapanke
 Jeremias Koller
