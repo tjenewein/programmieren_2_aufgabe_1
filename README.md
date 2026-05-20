@@ -123,7 +123,7 @@ No License
 
 ### Authors
 
-Anna Kapanke
-Jeremias Koller
-Thomas Jenewein 
+Anna Kapanke    
+Jeremias Koller 
+Thomas Jenewein     
 GitHub: https://github.com/tjenewein
